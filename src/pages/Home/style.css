@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: antiquewhite;
+}
+
+.section_aside {
+  width: 20%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100vh;
+}
+
+.section_search {
+  margin-left: 20%;
+  width: 80%;
+}
+
+
+@media (max-width: 1024px) {
+  .section_aside {
+    width: 40%;
+    border-right: 1px solid black;
+  }
+
+  .container_links h2 {
+    font-size: 1.2rem;
+  }
+
+  .container_links li {
+    font-size: 1rem;
+    padding: 5px 8px;
+  }
+
+  .config_perfil {
+    font-size: 1.5rem;
+  }
+
+  .titulo_aside {
+    font-size: 18px;
+  }
+
+}
+
+  @media (max-width: 740px) {
+    .section_aside{
+        width: 80%;
+    }
+  }
+
