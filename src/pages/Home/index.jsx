@@ -25,9 +25,9 @@ function Home() {
   };
 
     return (
-        <main style={{ display: 'flex' }}>
-            <MenuLateral visivel={deveMostrar}  />
+        <main style={{ display: 'flex'}}>
             <NavBar aoClicar={alternarVisibilidade} visivel={visivel} />
+            <MenuLateral visivel={deveMostrar}  />
         </main>
     );
 }

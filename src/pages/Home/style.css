@@ -1,16 +1,24 @@
+body{
+  height: 200vh;
+
+}
+
 aside{
     width: 20%;
     background-color: white;
+    position: fixed;
 }
 
 .container_header{
     width: 80%;
+    position: fixed;
+    left: 20%;
 }
 
 @media  (max-width: 1024px){
     aside{
-        display: flex;
-        position: absolute;
+        position: fixed;
+        z-index: 1;
         width: 40%;
     }
 
@@ -20,6 +28,7 @@ aside{
 
     .container_header{
         width: 100%;
+        left: 0;
     }
 
     .container_header input{
@@ -36,6 +45,7 @@ aside{
 
     .container_header{
         width: 100%;
+        position: fixed;
     }
 
     .logo_rivalix{
