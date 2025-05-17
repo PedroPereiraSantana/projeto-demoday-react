@@ -1,7 +1,13 @@
+import NavBar from "../../components/BarraNavegacao"
+import MenuLateral from "../../components/MenuLateral"
+import './style.css'
 
 function Test() {
     return(
-        <h1>Teste</h1>
+        <main style={{ display: 'flex'}}>
+            <MenuLateral/>
+            <NavBar/>
+        </main>
     )
 }
 

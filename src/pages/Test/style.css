@@ -9,37 +9,27 @@ aside{
 
 @media  (max-width: 1024px){
     aside{
-        display: flex;
-        position: absolute;
+        display: none;
         width: 40%;
-    }
-
-    .logo_rivalix{
-      width: 30%;
+        order: -1;
     }
 
     .container_header{
         width: 100%;
     }
 
-    .container_header input{
-      display: none;
+    .container_icons{
+        display: none;
     }
-
 }
 
 @media (max-width: 768px) {
     aside{
-        display: flex;
-        width: 85%;
+        display: none;
+        width: 80%;
     }
 
     .container_header{
         width: 100%;
     }
-
-    .logo_rivalix{
-      width: 70%;
-    }
-
 }

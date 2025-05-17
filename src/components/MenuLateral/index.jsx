@@ -6,19 +6,19 @@ import logoEscuro from '../../assets/logo-rivalix-black.png'
 import React, {useState} from 'react';
 import fotoTeste from '../../assets/Design_sem_nome_3.png'
 
-function MenuLateral() {
+function MenuLateral({visivel}) {
 
     const [escuro, setEscuro] = useState(false)
 
     const tema = {
-        backgroundColor : escuro ? "black" : "gray",
+        backgroundColor : escuro ? "black" : "rgb(230, 230, 230)",
         color: escuro ? "white" : "black",
         borderColor: escuro ? "white" : "black",
         
     }
 
     return(
-        <aside style={tema}>
+        <aside style={{ display: visivel ? "flex" : "none"}}>
             <div className="fixo_cima">
                 <div className="imagem_logo">
                     <img src={escuro ? logoEscuro : logoClaro} alt="A logo da Rivalix" className='logo_aside_rivalix' />
@@ -39,6 +39,7 @@ function MenuLateral() {
                         <li><a href="#"><i class="ri-multi-image-fill"></i>Galeria</a></li>
                         <li><a href="#"><i class="ri-gift-fill"></i>Recompesas</a></li>
                         <li><a href="#"><i class="ri-notification-3-fill"></i>Notificações</a></li>
+                        <li><a href="#"><i class="ri-diamond-fill"></i>Planos</a></li>
                     </ul>
                 </div>
                 <div className="container_links faq_ajuda">
@@ -56,7 +57,7 @@ function MenuLateral() {
                         </div>
                         <div className="nomes">
                             <p>nome</p>
-                            <p>nome_de_usuário</p>
+                            <p>Nível</p>
                         </div>
                     </div>
                     <div className='config_perfil'>
