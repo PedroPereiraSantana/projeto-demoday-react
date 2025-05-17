@@ -1,35 +1,4 @@
-aside{
-    width: 20%;
-    background-color: white;
-}
 
-.container_header{
-    width: 80%;
-}
-
-@media  (max-width: 1024px){
-    aside{
-        display: none;
-        width: 40%;
-        order: -1;
-    }
-
-    .container_header{
-        width: 100%;
-    }
-
-    .container_icons{
-        display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    aside{
-        display: none;
-        width: 80%;
-    }
-
-    .container_header{
-        width: 100%;
-    }
+body{
+    width: 100vw;
 }

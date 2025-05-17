@@ -1,11 +1,11 @@
-import React, { useState, useEffect  } from "react";
+import React, { useState, useEffect } from "react";
 import './style.css'
 import MenuLateral from '../../components/MenuLateral'
 import NavBar from '../../components/BarraNavegacao'
 
 function Home() {
-    const [visivel, setVisivel] = useState(false);
-    const [largura, setLargura] = useState(window.innerWidth);
+  const [visivel, setVisivel] = useState(false);
+  const [largura, setLargura] = useState(window.innerWidth);
 
   // Atualiza largura ao redimensionar a janela
   useEffect(() => {
@@ -24,11 +24,27 @@ function Home() {
     }
   };
 
-    return (
-        <main style={{ display: 'flex'}}>
-            <NavBar aoClicar={alternarVisibilidade} visivel={visivel} />
-            <MenuLateral visivel={deveMostrar}  />
-        </main>
-    );
+  return (
+    <main>
+      <div className="nav">
+        <NavBar  aoClicar={alternarVisibilidade} visivel={visivel} />
+      </div>
+      <div className="container_corpo">
+        <div className="sideBar">
+          <MenuLateral visivel={deveMostrar} />
+        </div>
+        <div className="container_sections">
+          <section className="container_primario">
+            <div className="cartaz_discord">
+              <h1>sla</h1>
+            </div>
+            <div className="ranking_home">
+
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  );
 }
 export default Home

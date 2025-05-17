@@ -1,8 +1,6 @@
 
 import './style.css'
 import 'remixicon/fonts/remixicon.css';
-import logoClaro from '../../assets/logo-rivalix-claro.png'
-import logoEscuro from '../../assets/logo-rivalix-black.png'
 import React, {useState} from 'react';
 import fotoTeste from '../../assets/Design_sem_nome_3.png'
 
@@ -20,9 +18,6 @@ function MenuLateral({visivel}) {
     return(
         <aside style={{ display: visivel ? "flex" : "none"}}>
             <div className="fixo_cima">
-                <div className="imagem_logo">
-                    <img src={escuro ? logoEscuro : logoClaro} alt="A logo da Rivalix" className='logo_aside_rivalix' />
-                </div>
                 <div className='container_links links_Navegacao'>
                     <h2 className='titulo_aside'>Navegações</h2>
                     <ul>
@@ -49,7 +44,7 @@ function MenuLateral({visivel}) {
                     </ul>
                 </div>
             </div>
-            <div className="fixo_baixo" style={tema}>
+            <div className="fixo_baixo">
                 <div className="container_perfil">
                     <div className='infos_perfil_home'>
                         <div className="container_img " >
@@ -62,7 +57,7 @@ function MenuLateral({visivel}) {
                     </div>
                     <div className='config_perfil'>
                         <a href="#" >
-                            <i class="ri-settings-3-fill" style={tema}></i>
+                            <i class="ri-settings-3-fill" ></i>
                         </a>
                     </div>
                 </div>

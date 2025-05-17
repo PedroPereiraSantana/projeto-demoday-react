@@ -24,6 +24,7 @@
 
 .logo_rivalix{
     width: 20%;
+    padding: 0 20px;
 }
 
 .logo_rivalix img{
@@ -31,21 +32,47 @@
 }
 
 .container_header search{
+    display: flex;
+    justify-content: center;
     width: 60%;
 }
 
 .container_header input{
-    width: 100%;
+    background-color: transparent;
+    width: 80%;
     height: 40px;
-    border-radius: 20px;
     padding-left: 20px;
-    border: 1px solid #000000;
-    outline: none;
+    border-color: #acacac;
+    font-size: 16px;
+    border-radius: 20px;
+    box-shadow: none;
+    border: none;
+    outline: 1px solid rgb(51, 51, 51);
+    transition: box-shadow 0.2s ease;
+
+}
+
+.container_header input::placeholder{
+    font-size: 16px;
+}
+
+.container_header input:hover {
+    outline-color: rgb(255, 255, 255);
+    box-shadow: 0 0 15px rgb(89, 0, 255);
+}
+
+.container_header input:focus {
+    font-size: 16px;
+    color: #000000;
+    outline: 1px solid rgb(255, 255, 255);
+    box-shadow: 0 0 10px 5px rgb(89, 0, 255);
+
 }
 
 .container_icons{
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 50px;
     font-size: 30px;
     width: 20%;
 }
@@ -94,9 +121,7 @@
 }
 
 @media (min-width: 1025px) {
-    .logo_rivalix{
-        display: none;
-    }
+
 
     .menu_hamburger{
         display: none;

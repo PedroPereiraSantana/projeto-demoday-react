@@ -1,55 +1,104 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden; 
+}
+
+main {
+  font-family: 'Exo 2';
   height: 200vh;
-
 }
 
-aside{
-    width: 20%;
-    background-color: white;
-    position: fixed;
+.nav {
+  position: fixed;
+  height: 150px;
+  width: 100%;
 }
 
-.container_header{
-    width: 80%;
-    position: fixed;
-    left: 20%;
+
+.container_header {
+  background: transparent;
+  width: 100%;
 }
 
-@media  (max-width: 1024px){
-    aside{
-        position: fixed;
-        z-index: 1;
-        width: 40%;
-    }
+.container_corpo{
+  display: flex;
+  padding-top: 150px;
+}
 
-    .logo_rivalix{
-      width: 30%;
-    }
+.sideBar {
+  width: 20%;
+  position: fixed;
+}
 
-    .container_header{
-        width: 100%;
-        left: 0;
-    }
+.container_sections{
+  width: 80%;
+  margin-left: 20%;
+  background-color: aqua;
+}
 
-    .container_header input{
-      display: none;
-    }
+@media (max-width: 1024px) {
+  aside {
+    width: 40%;
+    display: none;
+  }
+
+
+  .logo_rivalix {
+    padding-left: 40px;
+  }
+
+  .logo_rivalix {
+    width: 30%;
+  }
+
+  .container_header {
+    width: 100%;
+  }
+
+  .container_icons {
+    display: none;
+  }
+
+  .menu_hamburger {
+    padding-right: 40px;
+  }
+
+  .menu_hamburger i {
+    font-size: 25px;
+  }
+
+  .container_header input {
+    display: none;
+  }
 
 }
 
 @media (max-width: 768px) {
-    aside{
-        display: flex;
-        width: 85%;
-    }
+  aside {
+    display: flex;
+    width: 100%;
+  }
 
-    .container_header{
-        width: 100%;
-        position: fixed;
-    }
+  .container_header {
+    width: 100%;
+    position: fixed;
 
-    .logo_rivalix{
-      width: 70%;
-    }
+  }
+
+  .container_icons {
+    display: none;
+  }
+
+  .logo_rivalix {
+    width: 100%;
+  }
 
 }

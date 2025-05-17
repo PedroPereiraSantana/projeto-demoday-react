@@ -1,12 +1,11 @@
 
 import logoClaro from '../../assets/logo-rivalix-claro.png'
 import logoEscuro from '../../assets/logo-rivalix-black.png'
-import MenuLateral from '../MenuLateral'
 import './style.css'
 
-function NavBar ({aoClicar}) {
+function NavBar ({navegacao, aoClicar}) {
     return(
-        <div className='container_header'>
+        <nav className='container_header' style={{width: '100vw', height: '150px'}}>
             <div className="logo_rivalix">
                 <img src={logoClaro} alt="" width='200px' />
             </div>
@@ -26,14 +25,14 @@ function NavBar ({aoClicar}) {
                 </div>
             </div>
             <div className='menu_hamburger'>
-                <button>
+                <button onClick={navegacao}>
                     <i class="ri-search-line"></i>
                 </button>
                 <button  onClick={aoClicar}>
                     <i class="ri-menu-line"></i>
                 </button>
             </div>
-        </div>
+        </nav>
     )
 }
 

@@ -4,8 +4,7 @@ import './style.css'
 
 function Test() {
     return(
-        <main style={{ display: 'flex'}}>
-            <MenuLateral/>
+        <main>
             <NavBar/>
         </main>
     )

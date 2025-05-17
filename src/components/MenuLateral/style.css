@@ -1,6 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
-
 :root {
   --laranja: #FF6A00;
   --preto: #120F1F;
@@ -10,17 +8,12 @@
 }
 
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Exo 2", sans-serif;
-}
+
 
 aside{
     display:  flex;
@@ -28,12 +21,12 @@ aside{
     justify-content: space-between;
     background: transparent;
     border-right: 2px solid black;
-    height: 100vh;
+    height: 84vh;
 }
 
 .logo_aside_rivalix{
     padding: 20px 0;
-    width: 100%;
+    width: 80%;
 }
 
 .container_perfil{
@@ -74,11 +67,11 @@ aside{
 .container_links li{
     padding: 5px 10px; 
     font-size: 1.2rem;
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .container_links i{
-        padding-right: 10px;
+    padding-right: 10px;
 }
 
 .container_links ul, li{
