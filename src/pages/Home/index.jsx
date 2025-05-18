@@ -5,6 +5,7 @@ import NavBar from '../../components/BarraNavegacao'
 
 function Home() {
   const [visivel, setVisivel] = useState(false);
+  const [searchON, setSerchON] = useState(false)
   const [largura, setLargura] = useState(window.innerWidth);
 
   // Atualiza largura ao redimensionar a janela
@@ -15,7 +16,8 @@ function Home() {
   }, []);
 
   // Força visibilidade verdadeira se a tela for grande
-  const deveMostrar = largura >= 1024 || visivel;
+  const deveMostrar = largura >= 1024 || visivel || searchON;
+
 
   const alternarVisibilidade = () => {
     // Só alterna se for menor que 1050px
@@ -27,7 +29,7 @@ function Home() {
   return (
     <main>
       <div className="nav">
-        <NavBar  aoClicar={alternarVisibilidade} visivel={visivel} />
+        <NavBar aoClicar={alternarVisibilidade} visivel={visivel} />
       </div>
       <div className="container_corpo">
         <div className="sideBar">
@@ -36,7 +38,7 @@ function Home() {
         <div className="container_sections">
           <section className="container_primario">
             <div className="cartaz_discord">
-              <h1>sla</h1>
+
             </div>
             <div className="ranking_home">
 

@@ -1,19 +1,18 @@
-
 :root {
-  --laranja: #FF6A00;
-  --preto: #120F1F;
-  --off-white: #E8E5DE;
-  --roxo-vivo: #6d00ad;
-  --roxo-escuro: #290E42;
+    --laranja: #FF6A00;
+    --preto: #120F1F;
+    --off-white: #E8E5DE;
+    --roxo-vivo: #6d00ad;
+    --roxo-escuro: #290E42;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container_header{
+.container_header {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -22,22 +21,22 @@
     border-bottom: 2px solid black;
 }
 
-.logo_rivalix{
+.logo_rivalix {
     width: 20%;
     padding: 0 20px;
 }
 
-.logo_rivalix img{
+.logo_rivalix img {
     width: 100%;
 }
 
-.container_header search{
+.container_header search {
     display: flex;
     justify-content: center;
     width: 60%;
 }
 
-.container_header input{
+.container_header input {
     background-color: transparent;
     width: 80%;
     height: 40px;
@@ -52,7 +51,7 @@
 
 }
 
-.container_header input::placeholder{
+.container_header input::placeholder {
     font-size: 16px;
 }
 
@@ -69,7 +68,7 @@
 
 }
 
-.container_icons{
+.container_icons {
     display: flex;
     justify-content: center;
     gap: 50px;
@@ -77,7 +76,7 @@
     width: 20%;
 }
 
-.container_icons div{
+.container_icons div {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -88,42 +87,102 @@
     height: 50px;
 }
 
-.container_icons div:hover{
+.container_icons div:hover {
     box-shadow: 0 0 15px var(--roxo-vivo);
 }
 
-.container_icons a{
+.container_icons a {
     text-decoration: none;
     color: rgb(0, 0, 0);
     transition: 0.2s;
 }
 
-.container_icons a:hover{
+.container_icons a:hover {
     color: var(--roxo-vivo);
 }
 
-.menu_hamburger{
+.menu_hamburger {
     display: flex;
-    gap:30px;
+    gap: 30px;
     justify-content: center;
     width: 20%;
 }
 
-.menu_hamburger button{
+.menu_hamburger button {
     font-size: 20px;
     border: none;
     background: transparent;
     transition: 0.2s;
 }
 
-.menu_hamburger button:hover{
+.menu_hamburger button:hover {
     color: var(--laranja);
 }
 
 @media (min-width: 1025px) {
 
-
-    .menu_hamburger{
+    .menu_hamburger {
         display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container_header {
+        width: 100%;
+        flex-wrap: wrap;  
+        height: auto;
+    }
+
+    .logo_rivalix {
+        padding-left: 30px;
+        width: 50%;
+        max-width: 400px;
+        order: 1;
+    }
+
+
+    .container_icons {
+        display: none;
+    }
+
+    .menu_hamburger {
+        justify-content: end;
+        width: 50%;
+        order: 2;
+        padding-right: 40px;
+    }
+
+    .menu_hamburger i {
+        font-size: 25px;
+    }
+
+    search{
+        margin-top: 250px;
+        position: fixed;
+        order: 3;
+        flex-basis: 100%; 
+    }
+
+    .container_header input {
+        background-color: #ffffff;
+        margin: 30px;
+    }
+
+}
+
+@media (min-width: 768) {
+    .container_header {
+        width: 100%;
+        position: fixed;
+
+    }
+
+    .container_icons {
+        display: none;
+    }
+
+    .logo_rivalix {
+        width: 100%;
     }
 }

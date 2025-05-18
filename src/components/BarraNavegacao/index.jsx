@@ -3,7 +3,14 @@ import logoClaro from '../../assets/logo-rivalix-claro.png'
 import logoEscuro from '../../assets/logo-rivalix-black.png'
 import './style.css'
 
-function NavBar ({navegacao, aoClicar}) {
+function NavBar ({ aoClicar, larguraTela}) {
+
+    const largura = larguraTela
+
+    const navegacao = () =>{
+
+    } 
+
     return(
         <nav className='container_header' style={{width: '100vw', height: '150px'}}>
             <div className="logo_rivalix">

@@ -21,7 +21,7 @@ aside{
     justify-content: space-between;
     background: transparent;
     border-right: 2px solid black;
-    height: 84vh;
+    height: 87vh;
 }
 
 .logo_aside_rivalix{
@@ -128,6 +128,22 @@ aside{
 
 .config_perfil a:hover{
     color:  var(--laranja);
+}
+
+@media (max-width: 1024px) {
+  aside {
+    width: 200%;
+    display: none;
+  }
+
+}
+
+@media (max-width: 768px) {
+  aside {
+    display: flex;
+    width: 500%;
+  }
+
 }
 
 
