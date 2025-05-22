@@ -1,22 +1,13 @@
 
 import './style.css'
 import 'remixicon/fonts/remixicon.css';
-import React, {useState} from 'react';
+
 import fotoTeste from '../../assets/Design_sem_nome_3.png'
 
-function MenuLateral({visivel}) {
-
-    const [escuro, setEscuro] = useState(false)
-
-    const tema = {
-        backgroundColor : escuro ? "black" : "rgb(230, 230, 230)",
-        color: escuro ? "white" : "black",
-        borderColor: escuro ? "white" : "black",
-        
-    }
+function MenuLateral() {
 
     return(
-        <aside style={{ display: visivel ? "flex" : "none"}}>
+        <aside>
             <div className="fixo_cima">
                 <div className='container_links links_Navegacao'>
                     <h2 className='titulo_aside'>Navegações</h2>

@@ -16,6 +16,7 @@ main {
   height: 200vh;
 }
 
+
 .nav {
   z-index: 2;
   position: fixed;
@@ -40,7 +41,6 @@ main {
 
 .sideBar {
   width:20%;
-  position: fixed;
   height: 89vh;
 }
 

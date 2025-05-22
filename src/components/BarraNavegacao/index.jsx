@@ -1,11 +1,10 @@
 
 import logoClaro from '../../assets/logo-rivalix-claro.png'
-import logoEscuro from '../../assets/logo-rivalix-black.png'
 import './style.css'
 
-function NavBar ({ aoClicar, larguraTela}) {
+function NavBar ({ aoClicar}) {
 
-    const largura = larguraTela
+    
 
     const navegacao = () =>{
 

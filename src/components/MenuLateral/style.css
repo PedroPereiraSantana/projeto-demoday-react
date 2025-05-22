@@ -133,7 +133,8 @@ aside{
 @media (max-width: 1024px) {
   aside {
     width: 200%;
-    display: none;
+    display: flex;
+
   }
 
 }
