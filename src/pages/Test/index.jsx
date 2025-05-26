@@ -1,5 +1,4 @@
-import NavBar from "../../components/BarraNavegacao"
-import MenuLateral from "../../components/MenuLateral"
+import NavBar from "../../components/NavBar"
 import './style.css'
 
 function Test() {
