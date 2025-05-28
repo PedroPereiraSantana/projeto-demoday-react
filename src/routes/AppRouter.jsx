@@ -1,7 +1,9 @@
 
 import {BrowserRouter, Route, Routes} from 'react-router-dom'
+import './AppRouter.css'
 import Test from '../pages/Test'
 import Home from '../pages/Home'
+import { ThemeProvider } from '../context/ThemeContext'
 
 function Rout() {
     return(
@@ -14,4 +16,10 @@ function Rout() {
     )
 }
 
-export default Rout
+export default function App(){
+    return(
+        <ThemeProvider>
+            <Rout/>
+        </ThemeProvider>
+    )
+}

@@ -8,3 +8,18 @@
     box-sizing: border-box;
 }
 
+.light {
+    --bg-color: #dadada;
+    --text-color: #000;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.dark {
+    --bg-color: #272727;
+    --text-color: #ffffff;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+

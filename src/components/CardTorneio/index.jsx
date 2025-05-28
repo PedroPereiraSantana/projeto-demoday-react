@@ -13,7 +13,10 @@ export default function CardTorneio() {
                 <p>categoria 3</p>
             </div>
             <p>vagas restantes: 10</p>
-            <div className="barra_de_conclusão"></div>
+            <div className="barra_de_conclusao">
+                <div className='barra_de_conclusao_interna'>
+                </div>
+            </div>
             <p>descrição breve do torneio</p>
         </div>
     )

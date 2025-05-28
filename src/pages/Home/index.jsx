@@ -9,7 +9,11 @@ export default function Home() {
         <NavBar />
       </header>
       <main>
-        <CardTorneio />
+        <div className="container_cards_home">
+          <CardTorneio />
+          <CardTorneio />
+          <CardTorneio />
+        </div>
       </main>
     </>
   );

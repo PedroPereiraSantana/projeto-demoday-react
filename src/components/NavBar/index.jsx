@@ -1,6 +1,8 @@
 import "./style.css";
 import logoClaro from "../../assets/logo-rivalix-claro.png";
-import iconUser from "../../assets/exemple-icon.jpg";
+import logoEscuro from "../../assets/logo-rivalix-black.png"
+import iconUser from "../../assets/icon-teste-2.png";
+import { useTheme } from "../../context/ThemeContext";
 import { useState, useEffect } from "react";
 
 export default function NavBar() {
@@ -10,6 +12,8 @@ export default function NavBar() {
   const [visivel, setVisivel] = useState(width > 1024);
 
   const [displaySearch, setDisplaySearch] = useState(width > 1024);
+
+  const { theme } = useTheme();
 
   // esse useEffect atualiza o tamanho da variavel width que armazena o tamanho da tela
   useEffect(() => {
@@ -36,7 +40,7 @@ export default function NavBar() {
     <header>
       <nav className="container_header">
         <div className="logo_rivalix">
-          <img src={logoClaro} alt="" width="200px" />
+          <img key={theme} src={theme === 'dark' ? logoEscuro : logoClaro}alt="" width="200px" />
         </div>
         <div
           className={`search  ${width > 1024 || displaySearch ? "visivel" : "escondido"}`}
