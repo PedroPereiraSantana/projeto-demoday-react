@@ -10,13 +10,13 @@ header {
   width: 100%;
 }
 
-.container_cards_home{
+/* .container_cards_home{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   max-width: 100%;
   padding: 30px 0;
-}
+} */
 
 main {
   background-color: var(--bg-color);

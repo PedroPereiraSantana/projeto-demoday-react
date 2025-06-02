@@ -14,6 +14,10 @@ export default function Home() {
           <CardTorneio />
           <CardTorneio />
         </div>
+
+        <div>
+          sessão de desenvolvimento da página home
+        </div>
       </main>
     </>
   );
