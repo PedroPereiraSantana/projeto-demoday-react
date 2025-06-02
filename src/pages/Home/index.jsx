@@ -11,8 +11,8 @@ export default function Home() {
       <main>
         <div className="container_cards_home">
           <CardTorneio />
-          <CardTorneio />
-          <CardTorneio />
+          <CardTorneio/>
+          <CardTorneio/>
         </div>
 
         <div>

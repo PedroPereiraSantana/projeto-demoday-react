@@ -8,16 +8,18 @@ export default function CardTorneio() {
             <h2>Nome Do Torneio</h2>
             <p>Localização</p>
             <div className="categorias">
-                <p>categoria 1</p>
-                <p>categoria 2</p>
-                <p>categoria 3</p>
+                <p>modalidade</p>
+                <p>tipo</p>
+                <p>data</p>
             </div>
-            <p>vagas restantes: 10</p>
-            <div className="barra_de_conclusao">
-                <div className='barra_de_conclusao_interna'>
+            <div className='infos_extras'>
+                <p>vagas restantes: 10</p>
+                <div className="barra_de_conclusao">
+                    <div className='barra_de_conclusao_interna'>
+                    </div>
                 </div>
+                <p>descrição breve do torneio</p>
             </div>
-            <p>descrição breve do torneio</p>
         </div>
     )
 }
