@@ -90,11 +90,17 @@
     }
 
     .container_card_perfil h2{
-        font-size: 1.2rem;
+        font-size: 5rem;
     }
 
     .infos_extras{
         display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .container_card_perfil h2{
+        font-size: 0.1rem;
     }
 }
 

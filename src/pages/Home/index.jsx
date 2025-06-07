@@ -1,4 +1,5 @@
 import CardTorneio from "../../components/CardTorneio";
+import UserRanking from "../../components/UserRanking";
 import NavBar from "../../components/NavBar";
 import fotoFliperama from "../../assets/fliperama_home.png";
 import "./style.css";
@@ -25,7 +26,27 @@ export default function Home() {
               <h2>Ranking</h2>
               <p>Cada posição aqui carrega história, não estatística.</p>
             </div>
-            
+            <div className="container-jogadores-ranking-home">
+              <UserRanking />
+              <UserRanking />
+            </div>
+            <button className="botao_ranking_home">Mostrar Main</button>
+          </div>
+        </section>
+        <section className="section_dois_home">
+          <div className="container_torneios_home">
+            <div className="container_info_botao_home_torneios">
+              <div className="container_info_torneio_home">
+                <h2>Torneios</h2>
+                <p>Participe dos torneios e mostre que você é o melhor!</p>
+              </div>
+              <button>Criar Torneio</button>
+            </div>
+            <div className="container_cards_torneios_home">
+              <CardTorneio />
+              <CardTorneio />
+              <CardTorneio />
+            </div>
           </div>
         </section>
       </main>
