@@ -48,6 +48,20 @@ export default function Home() {
               <CardTorneio />
             </div>
           </div>
+          <div className="rankin_home_dois">
+            <div className="container_ranking_home_dois">
+              <div className="descricao_ranking_home">
+                <h2>Ranking</h2>
+                <p>Cada posição aqui carrega história, não estatística.</p>
+              </div>
+              <div className="container-jogadores-ranking-home">
+                <UserRanking />
+                <UserRanking />
+              </div>
+              <button className="botao_ranking_home">Mostrar Main</button>
+            </div>
+
+          </div>
         </section>
       </main>
     </>

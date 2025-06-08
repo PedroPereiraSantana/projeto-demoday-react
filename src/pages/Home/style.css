@@ -156,6 +156,13 @@ main {
   justify-content: space-around;
 }
 
+@media (min-width: 1025px) {
+  .rankin_home_dois{
+    display: none;
+  }
+  
+}
+
 @media (max-width: 1024px) {
   main {
     margin-left: 0;
@@ -194,11 +201,31 @@ main {
     color: white;
   }
 
-  .imagem_fliperama_home {
+  .container_ranking_home{
     display: none;
   }
 
-  .container_ranking_home {
+  .rankin_home_dois{
+    display: flex;
+    justify-content: center;
+  }
+
+  .container_ranking_home_dois{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    gap: 20px;
+    width: 90%;
+    min-height: 350px;
+    border: 2px solid #888888;
+    border-radius: 30px;
+    padding: 20px 0;
+    box-shadow: 0 0 8px #a020f0;
+  }
+
+  .imagem_fliperama_home {
     display: none;
   }
 
